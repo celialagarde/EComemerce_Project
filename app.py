@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request, render_template
 import stripe 
-from stripe.products import PRODUCTS
-from stripe.config import STRIPE_PUBLIC_KEY, STRIPE_SECRET_KEY
+from products import PRODUCTS
+from config import STRIPE_PUBLIC_KEY, STRIPE_SECRET_KEY
 
 
 app = Flask(__name__)
